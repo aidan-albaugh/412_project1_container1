@@ -38,25 +38,25 @@ services:
       - "8095:80"
 
   personal_website2:
-    build: ./personal_website2
+    build: ./website
     container_name: personal_website2
     ports:
       - "8096:80"
   
   personal_website3:
-    build: ./personal_website3
+    build: ./website
     container_name: personal_website3
     ports:
       - "8097:80"
 
   personal_website4:
-    build: ./personal_website4
+    build: ./website
     container_name: personal_website4
     ports:
       - "8098:80"
 
   personal_website5:
-    build: ./personal_website5 
+    build: ./website
     container_name: personal_website5
     ports:
       - "8099:80"
