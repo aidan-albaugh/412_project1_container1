@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  blog:
+    build: ./blog
+    container_name: blog_site
+    ports:
+      - "8081:80"
+
+  event:
+    build: ./event
+    container_name: event_site
+    ports:
+      - "8082:80"
+
+  portfolio:
+    build: ./portfolio
+    container_name: portfolio_site
+    ports:
+      - "8083:80"
+
+  restaurant:
+    build: ./restaurant
+    container_name: restaurant_site
+    ports:
+      - "8084:80"
+
+  startup:
+    build: ./startup
+    container_name: startup_site
+    ports:
+      - "8085:80"
