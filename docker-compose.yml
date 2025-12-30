@@ -4,29 +4,39 @@ services:
   blog:
     build: ./blog
     container_name: blog_site
+    volumes:
+      - ./logo.png:/usr/share/nginx/html/logo.png
     ports:
       - "8090:80"
 
   event:
     build: ./event
     container_name: event_site
+    volumes:
+      - ./logo.png:/usr/share/nginx/html/logo.png
     ports:
       - "8091:80"
 
   portfolio:
     build: ./portfolio
     container_name: portfolio_site
+    volumes:
+      - ./logo.png:/usr/share/nginx/html/logo.png
     ports:
       - "8092:80"
 
   restaurant:
     build: ./restaurant
     container_name: restaurant_site
+    volumes:
+      - ./logo.png:/usr/share/nginx/html/logo.png
     ports:
       - "8093:80"
 
   startup:
     build: ./startup
+    volumes:
+      - ./logo.png:/usr/share/nginx/html/logo.png
     container_name: startup_site
     ports:
       - "8094:80"
