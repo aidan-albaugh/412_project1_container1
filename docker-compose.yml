@@ -5,28 +5,58 @@ services:
     build: ./blog
     container_name: blog_site
     ports:
-      - "8081:80"
+      - "8090:80"
 
   event:
     build: ./event
     container_name: event_site
     ports:
-      - "8082:80"
+      - "8091:80"
 
   portfolio:
     build: ./portfolio
     container_name: portfolio_site
     ports:
-      - "8083:80"
+      - "8092:80"
 
   restaurant:
     build: ./restaurant
     container_name: restaurant_site
     ports:
-      - "8084:80"
+      - "8093:80"
 
   startup:
     build: ./startup
     container_name: startup_site
     ports:
-      - "8085:80"
+      - "8094:80"
+
+  personal_website1:
+    build: ./website
+    container_name: personal_website1
+    ports:
+      - "8095:80"
+
+  personal_website2:
+    build: ./personal_website2
+    container_name: personal_website2
+    ports:
+      - "8096:80"
+  
+  personal_website3:
+    build: ./personal_website3
+    container_name: personal_website3
+    ports:
+      - "8097:80"
+
+  personal_website4:
+    build: ./personal_website4
+    container_name: personal_website4
+    ports:
+      - "8098:80"
+
+  personal_website5:
+    build: ./personal_website5 
+    container_name: personal_website5
+    ports:
+      - "8099:80"
